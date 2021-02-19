@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>I'm MJ Jeong</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- 헤더 부분 -->
+    <header>
+        <nav class="navbar p-4 bg-dark position-fixed w-100" style="z-index: 9;">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold ps-5" style="color: #fff;" href="#main-part"><img
+                        src="./myImages/name-logo.png" style="width: 35px; height: 28px;" alt=""> MJ Jeong</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color:#fff;" aria-current="page" href="#skill-part">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- id = about-part 부분으로 이동 -->
+                        <a class="nav-link" style="color:#fff" href="#language">Language</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#fff" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:#fff" href="./weather.html">날씨보기</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color:#fff" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" style="color:#00ccde" href="#about">About MJ</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://github.com/MMyungji?tab=repositories">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg> Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    
+    
+
+
+
+    <main>
+
+        
+        <!-- 메인 슬라이드 이미지 -->
+        <section id="main-part">
+            <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 8;" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./myImages/main01.jpg" class="d-block w-100" style="height: 100vh; margin: 0px auto;"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>개발이 즐거운 개발자</h5>
+                            <p>a Development-friendly Developer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./myImages/main02.jpg" class="d-block w-100" style="height: 100vh; margin: 0px auto;"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>소통하는 개발자</h5>
+                            <p>a Good Communicator</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./myImages/main03.jpg" class="d-block w-100" style="height: 100vh; margin: 0px auto;"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>새로운 경험을 제공하는 개발자</h5>
+                            <p>a Developer Delivering New Experiences</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <!-- visually-hidden: 안보이게 가림-->
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- go up -->
+        <section>
+                <div class="position-fixed w-100 " style="z-index: 7; bottom: 20px;">
+                    <a style="padding-left: 90%" href="#main-part">
+                        <img style="height: 100px; width: 100px;" src="./myImages/go_up.png" alt="맨 상단으로 이동하는 이미지">
+                    </a>
+                </div>
+        </section>
+
+
+        <!-- Skill 파트  -->
+        <section id="skill-part" class="bg-light pt-5">
+            <div class="h1 p-3 w-100 ps-5 pt-5" style="color: #00ccde;">
+                < Skill Stack />
+            </div>
+
+            <div class="pb-4">
+                <ul class="d-flex list-unstyled justify-content-center">
+                    <span class="fw-bold" style="color: gray;">F r o n t e n d</span>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-app.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">Swift</h5>
+                                <p class="card-text text-white">Create simple iOS mobile app services,
+                                    Can connect to server
+                                    <br/><br/>
+                                    간단한 iOS 모바일 앱 서비스 제작 가능, 서버연동 가능
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-computer.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">HTML</h5>
+                                <p class="card-text text-white">Create simple web pages using with CSS, Javascript
+                                    <br/><br/>
+                                    CSS, Javascript를 사용하여 간단한 웹 페이지 만들기
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-computer.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">Vue</h5>
+                                <p class="card-text text-white">Will study
+                                    <br/><br/>
+                                    공부할 예정
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="d-flex list-unstyled justify-content-center">
+                    <span class="fw-bold" style="color: gray;">B a c k e n d</span>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-keyboard.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">node.js</h5>
+                                <p class="card-text text-white">Asynchronous communication, 
+                                    REST, Web Server Operations Development
+                                    <br/><br/>
+                                    비동기식 통신, REST, 웹 서버 운영 개발
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-db.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">Database</h5>
+                                <p class="card-text text-white">MySQL: good at , but can't performance improvement
+                                    node.js + MongoDB Project Experience
+                                    <br/><br/>
+                                    MySQL: 잘하지만 성능 향상은 공부중
+                                    node.js + MongoDB 프로젝트 경험
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="d-flex list-unstyled justify-content-center">
+                    <span class="fw-bold" style="color: gray;">DevOps & Embedded</span>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-cloud.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">AWS</h5>
+                                <p class="card-text text-white">EC2, RDS,S3
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-flow.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">Nginx</h5>
+                                <p class="card-text text-white">Web server operations, proxy settings
+                                    <br/><br/>
+                                    웹 서버 운영, 프록시 설정
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-firmware.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">RaspberryPi</h5>
+                                <p class="card-text text-white">Raspberry Pi + (C, Python) Project Experience
+                                    <br/><br/>
+                                    라즈베리 파이 + (C, python) 프로젝트 경험
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5">
+                        <div class="card round-3 bg-dark" style="width: 18rem; height: 330px; margin: 0px auto;">
+                            <img src="./myImages/slide-cursor.png" class="card-img-top mx-auto pt-4"
+                                style="width: 110px; height: 130px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color:#00ccde">Device Driver</h5>
+                                <p class="card-text text-white">Linux
+                                    <br/><br/>
+                                    Intermediate
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Language 파트 -->
+        <section id="language" class="bg-light pt-5">
+            <div class="h1 p-3 w-100 ps-5 pt-5" style="color: #00ccde;"> < Language Skill /> </div>
+
+            
+            <!-- progress 바 -->
+            <div class="p-3 m-3 w-50 mx-auto">
+                <!-- progress 바 -->
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                        style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">C</div>
+                    <span class="fw-light" style="margin-left: 85%; color: grey;">10%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                        style="width: 15%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">C++</div>
+                        <span class="fw-light" style="margin-left: 80%; color: grey;">15%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Java</div>
+                        <span class="fw-light" style="margin-left: 70%; color: grey;">25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                        <span class="fw-light" style="margin-left: 45%; color: grey;">50%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 75%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">python</div>
+                        <span class="fw-light" style="margin-left: 20%; color: grey;">75%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Swift</div>
+                        <span class="fw-light" style="margin-left: 70%; color: grey;">25%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 30%"
+                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                        <span class="fw-light" style="margin-left: 65%; color: grey;">30%</span>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <table class="table w-50 m-auto table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Language</th>
+                        <th scope="col">abilities</th>
+                        <th scope="col">level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class="fw-bold">Python</td>
+                        <td>Algorithms, Library Utilization</td>
+                        <td>⭐️⭐️⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td class="fw-bold">Javascript</td>
+                        <td>node.js, express.js, Vue.js</td>
+                        <td>⭐️⭐️⭐️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td class="fw-bold">Java</td>
+                        <td>spring</td>
+                        <td>⭐️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td class="fw-bold">Swift</td>
+                        <td>iOS mobile Front-end</td>
+                        <td>⭐️</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!-- Portfolio 파트 -->
+        
+        <section id="portfolio" class="bg-light pt-5">
+            <div class="h1 p-3 w-100 ps-5 pt-5" style="color: #00ccde;"> < Portfolio /> </div>
+
+            <div class="d-flex justify-content-evenly">
+                <div class="card" style="width: 18rem;">
+                    <img src="./myImages/logo-cowalker.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Co-Walker</h5>
+                        <p class="card-text">Team Building Platform Mobile App
+                            Joined as a server developer</p>
+                        <a href="https://github.com/project-cowalker/project-cowalker-server" class="btn btn-primary" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Go Co-Walker</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./myImages/logo-wmp.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Contest for campus</h5>
+                        <p class="card-text">A New Business Planning Prototype Competition hosted by wemakeprice.
+                            Joined as a server developer, Prize winner
+                        </p>
+                        <a href="https://github.com/MMyungji/project-wemakeprice" class="btn btn-primary" style="bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Go PPlus</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./myImages/loto-today.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Contest for youth</h5>
+                        <p class="card-text">4th Mobile App Contest hosted by KB Bank for youth.
+                            Awarded Encouragement
+                            Joined as a server developer</p>
+                        <a href="https://github.com/MMyungji/kb_project_Today" class="btn btn-primary" style="bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Go today</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./myImages/logo-gnld.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitoring system using smart potted plants</h5>
+                        <p class="card-text">Created webs and apps to monitor smart potted plants and users
+                            Joined as a server developer
+                        </p>
+                        <a href="https://github.com/careground/GNLD-Server" class="btn btn-primary" style="bottom: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Go GNLD</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- About 파트 -->
+        <section id="about" class="bg-light pt-5">
+            <!-- <div class="h1 p-3 w-100 ps-5 pt-5" style="color: #00ccde;"> < About ME /> </div> -->
+
+            <div style="position: relative; text-shadow: 2px 2px 2px gray;">
+                <img class="w-100" src="./myImages/profile-img.jpeg" alt="프로필 이미지">
+                <div class="position-absolute text-white fw-bold text-center" style="font-size: 4.8em; left: 35%; bottom: 65%;">
+                    I'm Myungji Jeong
+                    <br/>
+                    정명지
+                </div>
+                <div class="fw-bold text-white position-absolute" style="left: 100px; width: 450px; bottom: 140px; font-size: 1.8em;">
+                    <br/>
+                    I wanna be a Talented Developer. 
+                    <br/><br/>
+                    I strive to build immersive and beautiful program through carefully crafted code and user-centric design.
+                </div>
+                <div class="fw-bold text-white position-absolute" style="right: 100px; width: 450wv; bottom: 140px; font-size: 1.8em;">
+                    <a href="mailto:hallomj1@gmail.com" style="color:khaki;">
+                        contact Me! 
+                        <br/>
+                        hallomj1@gmail.com
+                    </a>
+                    <br/><br/>
+                    <a href="https://github.com/MMyungji?tab=repositories" style="color:mediumspringgreen">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        Github : MMyungji </a>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-center p-3 fs-6 fst-italic " style="color:#00ccde">
+        &copy; 2021 MJ Jeong ALL RIGHT RESERVED
+
+    </footer>
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>
